@@ -1,0 +1,35 @@
+.grid{
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 10fr 0.5fr;
+    gap: 10px;
+    grid-template-areas: "nav nav" "main aside" "footer footer";
+}
+nav{
+    grid-area: nav;
+    background-color: aliceblue;
+}
+main{
+    grid-area: main;
+    background-color: aqua;
+}
+aside{
+    grid-area: aside;
+    background-color: yellowgreen;
+}
+footer{
+    grid-area: footer;
+    background-color: green;
+}
+.menu{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+.logo{
+    width:120px;
+}
+footer{
+    text-align: center;
+}
